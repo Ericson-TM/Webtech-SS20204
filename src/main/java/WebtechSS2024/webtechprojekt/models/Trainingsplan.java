@@ -1,8 +1,17 @@
 package WebtechSS2024.webtechprojekt.models;
 
 
+import lombok.*;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Trainingsplan {
 
+    private int id;
+
+    private String art;
 
     private String zielZeit;
 
@@ -12,42 +21,13 @@ public class Trainingsplan {
 
     private int intensivität;
 
-    public Trainingsplan(String zielZeit, String dauerMonate, int trainingstage, int intensivität){
+    public Trainingsplan(String art, String zielZeit, String dauerMonate, int trainingstage, int intensivität){
+        this.art = art;
         this.zielZeit = zielZeit;
         this.dauerMonate = dauerMonate;
         this.trainingstage = trainingstage;
         this.intensivität = intensivität;
     }
 
-    public String getZielZeit() {
-        return zielZeit;
-    }
 
-    public void setZielZeit(String zielZeit) {
-        this.zielZeit = zielZeit;
-    }
-
-    public String getDauerMonate() {
-        return dauerMonate;
-    }
-
-    public void setDauerMonate(String dauerMonate) {
-        this.dauerMonate = dauerMonate;
-    }
-
-    public int getTrainingstage() {
-        return trainingstage;
-    }
-
-    public void setTrainingstage(int trainingstage) {
-        this.trainingstage = trainingstage;
-    }
-
-    public int getIntensivität() {
-        return intensivität;
-    }
-
-    public void setIntensivität(int intensivität) {
-        this.intensivität = intensivität;
-    }
 }
