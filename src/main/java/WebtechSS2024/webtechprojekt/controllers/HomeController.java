@@ -23,6 +23,7 @@ public class HomeController {
 
     @GetMapping(path = "/trainingsplaene")
     public ResponseEntity<List<Trainingsplan>> getTrainingsplaene() {
+
         return ResponseEntity.ok(trainingsplanList);
     }
 
