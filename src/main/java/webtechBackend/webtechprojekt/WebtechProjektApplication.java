@@ -1,4 +1,4 @@
-package WebtechSS2024.webtechprojekt;
+package webtechBackend.webtechprojekt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

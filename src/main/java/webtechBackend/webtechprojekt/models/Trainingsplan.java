@@ -1,4 +1,4 @@
-package WebtechSS2024.webtechprojekt.models;
+package webtechBackend.webtechprojekt.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

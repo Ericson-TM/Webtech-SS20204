@@ -1,4 +1,4 @@
-package WebtechSS2024.webtechprojekt;
+package webtechBackend.webtechprojekt;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -7,7 +7,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 class WebtechProjektApplicationTests {
 
 	@Test
-	void contextLoads() {
-	}
+	void contextLoads() {}
 
 }

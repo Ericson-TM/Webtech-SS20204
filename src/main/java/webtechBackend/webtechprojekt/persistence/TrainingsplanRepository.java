@@ -1,7 +1,7 @@
-package WebtechSS2024.webtechprojekt.persistence;
+package webtechBackend.webtechprojekt.persistence;
 
 
-import WebtechSS2024.webtechprojekt.models.Trainingsplan;
+import webtechBackend.webtechprojekt.models.Trainingsplan;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

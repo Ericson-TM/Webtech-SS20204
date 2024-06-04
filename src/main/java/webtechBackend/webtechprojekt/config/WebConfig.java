@@ -1,4 +1,4 @@
-package WebtechSS2024.webtechprojekt.config;
+package webtechBackend.webtechprojekt.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

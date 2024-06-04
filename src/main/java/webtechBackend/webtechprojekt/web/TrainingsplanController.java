@@ -1,7 +1,7 @@
-package WebtechSS2024.webtechprojekt.web;
+package webtechBackend.webtechprojekt.web;
 
-import WebtechSS2024.webtechprojekt.models.Trainingsplan;
-import WebtechSS2024.webtechprojekt.service.TrainingsplanService;
+import webtechBackend.webtechprojekt.models.Trainingsplan;
+import webtechBackend.webtechprojekt.service.TrainingsplanService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;

@@ -1,8 +1,8 @@
-package WebtechSS2024.webtechprojekt.service;
+package webtechBackend.webtechprojekt.service;
 
 
-import WebtechSS2024.webtechprojekt.models.Trainingsplan;
-import WebtechSS2024.webtechprojekt.persistence.TrainingsplanRepository;
+import webtechBackend.webtechprojekt.models.Trainingsplan;
+import webtechBackend.webtechprojekt.persistence.TrainingsplanRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -38,5 +38,5 @@ public class TrainingsplanService {
             repository.deleteById(id);
         }
         return exists;
-    }
+        }
 }
