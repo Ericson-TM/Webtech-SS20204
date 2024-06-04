@@ -1,17 +1,23 @@
 package WebtechSS2024.webtechprojekt.models;
 
-
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.*;
 
+@Entity
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Trainingsplan {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private String art;
+    private String name;
 
     private String zielZeit;
 
@@ -21,8 +27,8 @@ public class Trainingsplan {
 
     private int intensivität;
 
-    public Trainingsplan(String art, String zielZeit, String dauerMonate, int trainingstage, int intensivität){
-        this.art = art;
+    public Trainingsplan(String name, String zielZeit, String dauerMonate, int trainingstage, int intensivität){
+        this.name = name;
         this.zielZeit = zielZeit;
         this.dauerMonate = dauerMonate;
         this.trainingstage = trainingstage;
