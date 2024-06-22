@@ -16,14 +16,15 @@ public class Trainingsplan {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    private String zielZeit;
-    private String dauerMonate;
+    private String zeit;
+    private String dauer;
     private int intensivitaet;
 
-    public Trainingsplan(String name, String zielZeit, String dauerMonate, int intensivitaet){
+    public Trainingsplan(int id, String name, String zeit, String dauer, int intensivitaet){
+        this.id = id;
         this.name = name;
-        this.zielZeit = zielZeit;
-        this.dauerMonate = dauerMonate;
+        this.zeit = zeit;
+        this.dauer = dauer;
         this.intensivitaet = intensivitaet;
     }
 

@@ -35,7 +35,7 @@ public class TrainingsplanController {
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Trainingsplan> addTrainingsplan(@Valid @RequestBody Trainingsplan body){
-        final Trainingsplan t = new Trainingsplan(body.getName(), body.getZielZeit(), body.getDauerMonate(), body.getIntensivitaet());
+        final Trainingsplan t = new Trainingsplan(body.getId(), body.getName(), body.getZeit(), body.getDauer(), body.getIntensivitaet());
         final Trainingsplan createdTrainingsplan = trainingsplanService.addTrainingsplan(t);
         return new ResponseEntity<>(createdTrainingsplan, HttpStatus.CREATED);
 
