@@ -9,7 +9,6 @@ import lombok.*;
 @Entity
 @Getter
 @Setter
-@NoArgsConstructor
 public class Trainingsplan {
 
     @Id
@@ -27,6 +26,8 @@ public class Trainingsplan {
         this.dauer = dauer;
         this.intensivitaet = intensivitaet;
     }
+
+    public Trainingsplan() {}
 
 
 }

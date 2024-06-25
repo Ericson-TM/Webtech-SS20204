@@ -1,24 +1,21 @@
 package webtechBackend.webtechprojekt.models;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
 @Entity(name = "users")
 @Getter
 @Setter
-@NoArgsConstructor
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
+    @Column(unique = true)
     private String username;
     private String password;
 
@@ -27,5 +24,7 @@ public class User {
         this.username = username;
         this.password = password;
     }
+
+    public User() {}
 
 }
