@@ -13,7 +13,11 @@ public class UserService {
     private UserRepository userRepository;
 
     public User registerUser(User user){
-        // Zusätzliche Validierung möglich
+        // Überprüft ob Username bereits vergeben ist und gibt Fehlermeldung zurück
+        if (userRepository.findByUsername(user.getUsername()) != null){
+            throw new RuntimeException("Username bereits vergeben");
+        }
+
         return userRepository.save(user);
     }
 
