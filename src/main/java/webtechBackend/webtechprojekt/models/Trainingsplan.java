@@ -6,9 +6,17 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.*;
 
+/**
+ * Trainingsplan Model
+ * @Param: id, name, zeit, dauer, intensivitaet
+ *
+ */
+
+
 @Entity
 @Getter
 @Setter
+@ToString
 public class Trainingsplan {
 
     @Id

@@ -6,6 +6,11 @@ import lombok.Getter;
 import lombok.Setter;
 
 
+/**
+ * User Model
+ * @Param: id, username, password
+ *
+ */
 @Entity(name = "users")
 @Getter
 @Setter
